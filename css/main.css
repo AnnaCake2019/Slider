@@ -1,0 +1,123 @@
+.open{
+    height: 100vh;
+    background: lightgray;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.open button{
+    margin-top: 20%;
+    background: orange;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+}
+.showSlider{
+    display: none;
+}
+.slider .show{
+    display: none;
+}
+.slider .text{
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 33%;
+}
+
+.slider .text p {
+    font-size: 20px;
+}
+
+.slider .text .disc__text{
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: 0;
+    color: white;
+    background: orange;
+}
+
+.slider .text .all__text{
+    margin-left: 5px;
+    padding: 3px 15px;
+    border-radius: 2px;
+    border: 1px black solid;
+    color: black;
+    background: none;
+}
+
+
+
+.slider .previews{
+    position: relative;
+    bottom: 35%;
+    z-index: 1;
+}
+.slider .previews div {
+    display: flex;
+    justify-content: space-between;
+}
+.slider .preview{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.slider .preview img{
+    padding: 5px;
+}
+.slider .preview p{
+    color: white;
+    font-size: 8px;
+    margin: auto 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .slider .text{
+        bottom: 55%;
+    }
+    .slider .text h2{
+        font-size: 18px;
+    }
+    .slider .text p{
+        font-size: 15px;
+    }
+    .slider .text button{
+        padding: 1px 15px;
+        font-size: 10px;
+    }
+
+    .slider .preview img{
+        width: 40px;
+        height: auto;
+    }
+
+    .slider .preview p{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .slider .show{
+        display: inline-block;
+    }
+    .slider .none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .slider .text h2{
+        font-size: 12px;
+    }
+    .slider .text p{
+        font-size: 10px;
+    }
+    .slider .text button{
+        padding: 0px 6px;
+        font-size: 10px;
+    }
+    .slider .text .all__text{
+        display: none;
+    }
+}
